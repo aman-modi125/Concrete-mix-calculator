@@ -1,0 +1,61 @@
+/* Custom styling for IS 10262:2019 Mix Design Calculator */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0284c7;
+}
+
+/* Nav Tab Active State */
+.nav-tab.active {
+    color: #38bdf8;
+    border-bottom-color: #38bdf8;
+}
+
+/* Print Styling for Report */
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    header, nav, footer, button, .no-print {
+        display: none !important;
+    }
+
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .tab-content {
+        display: none !important;
+    }
+
+    #tab-report {
+        display: block !important;
+    }
+
+    #reportDocument {
+        border: none !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
