@@ -1,3 +1,5 @@
+/* Custom styling for IS 10262:2019 Mix Design Calculator */
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
@@ -15,36 +17,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #0284c7;
-}
-
-/* Animations */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@keyframes fadeInScale {
-    0% { opacity: 0; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-.animate-float {
-    animation: float 3s ease-in-out infinite;
-}
-
-.animate-fade-in {
-    animation: fadeInScale 0.6s ease-out forwards;
-}
-
-/* Wizard transitions */
-.wizard-step {
-    display: none;
-    animation: fadeInScale 0.4s ease-out;
-}
-
-.wizard-step.active {
-    display: block;
 }
 
 /* Nav Tab Active State */
